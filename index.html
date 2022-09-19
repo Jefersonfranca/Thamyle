@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nome="keywords" content="Thamyle Marinho Estilista">
+    <link rel="icon" sizes="192x192" href="/imagens/logo.png">
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/jpeg"/>
+  <link rel="apple-touch-icon" href="imagens/logo.png" type="image/jpeg"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">   
+    <title>Thamyle Marinho Stylist</title>
+</head>
+<script>
+    ;window.NREUM||(NREUM={});NREUM.init={privacy:{cookies_enabled:false}};
+    window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(24),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(25),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(25),a=t(24);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(21),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(24),c=t(25),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(26);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],19:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],20:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(23),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],21:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],22:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],23:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],24:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],25:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],26:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return l[t]=l[t]||i(n)}function v(t,e){u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:c,aborted:!1};return x}function o(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(24),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(y,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=t(18),c=t("handle"),s=t(24),f=t("ee"),u=t(22),d=t(19),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;if(d(l.location)){NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:a.getLastTimestamp(),now:a,origin:g,features:{},xhrWrappable:x,userAgent:u};t(15),t(20),p[h]?(p[h]("DOMContentLoaded",o,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",i),l[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,s],u],t)}c(n+"start",[o,a,s],u,f);try{return l=e.apply(a,o)}catch(h){throw c(n+"err",[o,a,h],u,f),h}finally{c(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,i,s,o))}function c(n,r,o,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,o,e,a)}catch(s){i([s,n,r,o],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(25),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,12,4,3]);
+    ;NREUM.loader_config={accountID:"402373",trustKey:"402373",agentID:"588868219",licenseKey:"2131890c87",applicationID:"588868219"}
+    ;NREUM.info={beacon:"bam-cell.nr-data.net",errorBeacon:"bam-cell.nr-data.net",licenseKey:"2131890c87",applicationID:"588868219",sa:1}
+</script>
+<style class="js-dom-cleanup">
+        a,
+        .dropdown-menu {
+            -webkit-transition: none !important;
+            -moz-transition: none !important;
+            -ms-transition: none !important;
+            -o-transition: none !important;
+            transition: none !important;
+        }
+    </style>
+<style>
+    @font-face {
+    font-family: "LTC Caslon";
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/n4.woff2?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=e9fa1a027a77156e42da3b5732e875b5eb60965ebc97b361f3f0265cf141d010) format("woff2"), url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/n4.woff?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=53171a0d27d0da3f90ed17735552fa956bcc9d39d240623ca2c670e0f4faf21a) format("woff");
+    }
+    @font-face {
+    font-family: "LTC Caslon";
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/i4.woff2?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=1a87aaf80c03349de199bf3200e6ce82646076e2295a1c1af5ce21ad5dc1d103) format("woff2"), url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/i4.woff?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=212b5939519dd0f6de12b39c0f459bbd2fc7dd92742aa5ff16d86e73440605a4) format("woff");
+    }
+    @font-face {
+    font-family: "LTC Caslon";
+    font-weight: 700;
+    font-style: normal;
+    src: url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/n7.woff2?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=90816961f48e76fe36901210c27c0b0ff628a3b504b364e7672d44d8cb1dcb8a) format("woff2"), url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/n7.woff?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=d8374adbf239d231f7e3a99e534ea1c7756b841f3c242ed4576610a022471d58) format("woff");
+    }
+    @font-face {
+    font-family: "LTC Caslon";
+    font-weight: 700;
+    font-style: italic;
+    src: url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/i7.woff2?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=2c66207349a834f2df3e1c2d6661e3d1b89dc1fa1f8a8cbe720765906277aacc) format("woff2"), url(https://pw-assets.s3.us-west-2.amazonaws.com/fonts/ltccaslon/i7.woff?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDMaCXVzLXdlc3QtMiJHMEUCIQCEqG1%2BcGgbknfpeVxC3vAsoq%2FuZVMivQ%2Bct5%2Fy32oScAIgGkRblFOG1LXUVUaLC2m6SZk9RYwdIJjfdYYgO28yVScq0gQIfBAAGgwxOTIzNjU2NTIyNTMiDMbRfsqspQBnnrXS%2FiqvBH6%2Bwqzq5jApin40vuoty5KoD8YA5NBD3Zj0vb0WCMRPVrY6rK2IHdxHQw5fYuY99ificaK%2BH6rDoFEs3emfMTjF6feGaOn23KZOuAjRiaAwdeKAa3mNnGE1Fkp0eAmWbdldZDQryn%2FhdlSR3V8dMnAO%2FsFKgY1GOFdGkE2YSxAywlr0JcRJi37DBHgJVO93FK82vieCMAOGAG8WK8%2Fl5nuvub47qndfM5NLi3pwibUlB6xLeXsNHllWwLaMY85xP%2FrYcwU3tB2QkYxw1XVMjZ6sCn8ewx2y4p8SUAazTZJRbavZGAfcYP3XMakIwExSjmCkhmDPrXot6kmVyUBrPKr%2BjEdy%2F46nmX5OQbUPjvbd4yOh%2FWeftaneSdWDW0C7LgcvVS3oCRn3zqsb9So88myPc6YhqQlYbNDDrlGQFD4KyQrYuFYeyJGJA%2FsC%2B0edWfViBYs1bW38TXIccOagGcNLtGoSA5ZniSadyvyEZWw6aM%2F%2BdIZ4zNa9HJ2VABhQAdH9GwR3gtO6Y8DZj0pcBAKrRGI6ZKAVnTUvxUL3TETALWdH28utOa8z%2BNVCHzsWom%2BVcfW%2Bg7IQgBAmbsVFovy2F7mQR%2F0S6AYvHBNqgdqJ53Yftf9RQqDWP0P6WRhkWKY6BfJzLqD%2BEL7y8AZxJu%2BztLlvvWZSbnrngEMvqttRhkjUBIxyFrciVxW%2BFuB9gxYZLDVaMD9YWhRJqq0E6T15TEdtsaYoq6TzUIIXAp0w2IbxlgY6qQEm648pfNL5jIM0OC2bblaJE8zUnbHTwrOOqwdsXOARrz4RrXgwP5CcLRupH%2B4PbNnEBTU49gpSor7aVGFwbiFpWx3cSmVzW0UAo9KaqZqBu4ByNJvCR04XxPAIXY3ZYRx85PAvMRtQOIhqF1swRJ%2By56fJYj6Xr8%2BeQ8KJQcw9MZHVRjmN1Wy%2F6Cf9iJ9bVbMw%2FiRKGgUEjo5NpZEDd5s86PPnENQwdsv5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASZSPC5EO767I27XC%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T193710Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Signature=690078e4703d328b0e0f198b1f660383ad086be97270c043b1deb98b03fc95ef) format("woff");
+    }
+</style>
+<link href="https://static-pw.pixieset.com/assets/client/css/themes/theme_3.css?id=3567f2905caac1828a76" rel="stylesheet">
+<style>:root {
+    --base-size:16px;
+    --display-heading_font-family:'LTC Caslon', serif;
+    --display-heading_font-weight:400;
+    --display-heading_font-style:normal;
+    --display-heading_font-size-small: min(3.875rem, 1rem + 3.19vh);
+    --display-heading_font-size: min(3.875rem, 1rem + 3.19vw);
+    --display-heading_font-size-large: 3.875rem;
+    --display-heading_line-height:1.1em;
+    --display-heading_letter-spacing:0em;
+    --display-heading_text-transform:none;
+    --display-subtitle_font-family:'LTC Caslon', serif;
+    --display-subtitle_font-weight:400;
+    --display-subtitle_font-style:normal;
+    --display-subtitle_font-size-small: min(1rem, 1rem + 0vh);
+    --display-subtitle_font-size: min(1rem, 1rem + 0vw);
+    --display-subtitle_font-size-large: 1rem;
+    --display-subtitle_line-height:1.66em;
+    --display-subtitle_letter-spacing:0.17em;
+    --display-subtitle_text-transform:uppercase;
+    --heading-1_font-family:'LTC Caslon', serif;
+    --heading-1_font-weight:400;
+    --heading-1_font-style:normal;
+    --heading-1_font-size-small: min(2.625rem, 1rem + 1.81vh);
+    --heading-1_font-size: min(2.625rem, 1rem + 1.81vw);
+    --heading-1_font-size-large: 2.625rem;
+    --heading-1_line-height:1.08em;
+    --heading-1_letter-spacing:-0.02em;
+    --heading-1_text-transform:none;
+    --heading-2_font-family:'LTC Caslon', serif;
+    --heading-2_font-weight:400;
+    --heading-2_font-style:normal;
+    --heading-2_font-size-small: min(2rem, 1rem + 1.11vh);
+    --heading-2_font-size: min(2rem, 1rem + 1.11vw);
+    --heading-2_font-size-large: 2rem;
+    --heading-2_line-height:1.4em;
+    --heading-2_letter-spacing:-0.02em;
+    --heading-2_text-transform:none;
+    --heading-3_font-family:'LTC Caslon', serif;
+    --heading-3_font-weight:400;
+    --heading-3_font-style:normal;
+    --heading-3_font-size-small: min(1.5rem, 1rem + 0.56vh);
+    --heading-3_font-size: min(1.5rem, 1rem + 0.56vw);
+    --heading-3_font-size-large: 1.5rem;
+    --heading-3_line-height:1.3em;
+    --heading-3_letter-spacing:0em;
+    --heading-3_text-transform:none;
+    --heading-4_font-family:'LTC Caslon', serif;
+    --heading-4_font-weight:400;
+    --heading-4_font-style:normal;
+    --heading-4_font-size-small: min(1.125rem, 1rem + 0.14vh);
+    --heading-4_font-size: min(1.125rem, 1rem + 0.14vw);
+    --heading-4_font-size-large: 1.125rem;
+    --heading-4_line-height:1.67em;
+    --heading-4_letter-spacing:0.17em;
+    --heading-4_text-transform:uppercase;
+    --heading-5_font-family:'LTC Caslon', serif;
+    --heading-5_font-weight:400;
+    --heading-5_font-style:normal;
+    --heading-5_font-size-small: min(0.8125rem, 1rem + -0.21vh);
+    --heading-5_font-size: min(0.8125rem, 1rem + -0.21vw);
+    --heading-5_font-size-large: 0.8125rem;
+    --heading-5_line-height:1.43em;
+    --heading-5_letter-spacing:0.21em;
+    --heading-5_text-transform:uppercase;
+    --heading-6_font-family:'LTC Caslon', serif;
+    --heading-6_font-weight:400;
+    --heading-6_font-style:normal;
+    --heading-6_font-size-small: min(0.75rem, 1rem + -0.28vh);
+    --heading-6_font-size: min(0.75rem, 1rem + -0.28vw);
+    --heading-6_font-size-large: 0.75rem;
+    --heading-6_line-height:1.67em;
+    --heading-6_letter-spacing:0.17em;
+    --heading-6_text-transform:uppercase;
+    --paragraph-1_font-family:'LTC Caslon', serif;
+    --paragraph-1_font-weight:400;
+    --paragraph-1_font-style:normal;
+    --paragraph-1_font-size-small: min(1.125rem, 1rem + 0.14vh);
+    --paragraph-1_font-size: min(1.125rem, 1rem + 0.14vw);
+    --paragraph-1_font-size-large: 1.125rem;
+    --paragraph-1_line-height:1.8em;
+    --paragraph-1_letter-spacing:0em;
+    --paragraph-1_text-transform:none;
+    --paragraph-2_font-family:'LTC Caslon', serif;
+    --paragraph-2_font-weight:400;
+    --paragraph-2_font-style:normal;
+    --paragraph-2_font-size-small: min(1rem, 1rem + 0vh);
+    --paragraph-2_font-size: min(1rem, 1rem + 0vw);
+    --paragraph-2_font-size-large: 1rem;
+    --paragraph-2_line-height:2em;
+    --paragraph-2_letter-spacing:0em;
+    --paragraph-2_text-transform:none;
+    --paragraph-3_font-family:'LTC Caslon', serif;
+    --paragraph-3_font-weight:400;
+    --paragraph-3_font-style:normal;
+    --paragraph-3_font-size-small: min(0.8125rem, 1rem + -0.21vh);
+    --paragraph-3_font-size: min(0.8125rem, 1rem + -0.21vw);
+    --paragraph-3_font-size-large: 0.8125rem;
+    --paragraph-3_line-height:1.71em;
+    --paragraph-3_letter-spacing:0em;
+    --paragraph-3_text-transform:none;
+    --site-title_font-family:'LTC Caslon', serif;
+    --site-title_font-weight:400;
+    --site-title_font-style:normal;
+    --site-title_font-size-small: min(1.375rem, 1rem + 0.42vh);
+    --site-title_font-size: min(1.375rem, 1rem + 0.42vw);
+    --site-title_font-size-large: 1.375rem;
+    --site-title_line-height:1.18em;
+    --site-title_letter-spacing:0em;
+    --site-title_text-transform:none;
+    --navigation_font-family:'LTC Caslon', serif;
+    --navigation_font-weight:400;
+    --navigation_font-style:normal;
+    --navigation_font-size-small: min(0.8125rem, 1rem + -0.21vh);
+    --navigation_font-size: min(0.8125rem, 1rem + -0.21vw);
+    --navigation_font-size-large: 0.8125rem;
+    --navigation_line-height:1.29em;
+    --navigation_letter-spacing:0.18em;
+    --navigation_text-transform:uppercase;
+    --sub-navigation_font-family:'LTC Caslon', serif;
+    --sub-navigation_font-weight:400;
+    --sub-navigation_font-style:normal;
+    --sub-navigation_font-size-small: min(0.9375rem, 1rem + -0.07vh);
+    --sub-navigation_font-size: min(0.9375rem, 1rem + -0.07vw);
+    --sub-navigation_font-size-large: 0.9375rem;
+    --sub-navigation_line-height:1.4em;
+    --sub-navigation_letter-spacing:0em;
+    --sub-navigation_text-transform:none;
+    --overlay-navigation_font-family:'LTC Caslon', serif;
+    --overlay-navigation_font-weight:400;
+    --overlay-navigation_font-style:normal;
+    --overlay-navigation_font-size-small: min(2rem, 1rem + 1.11vh);
+    --overlay-navigation_font-size: min(2rem, 1rem + 1.11vw);
+    --overlay-navigation_font-size-large: 2rem;
+    --overlay-navigation_line-height:1.17em;
+    --overlay-navigation_letter-spacing:0em;
+    --overlay-navigation_text-transform:none;
+    --overlay-sub-navigation_font-family:'LTC Caslon', serif;
+    --overlay-sub-navigation_font-weight:400;
+    --overlay-sub-navigation_font-style:normal;
+    --overlay-sub-navigation_font-size-small: min(1rem, 1rem + 0vh);
+    --overlay-sub-navigation_font-size: min(1rem, 1rem + 0vw);
+    --overlay-sub-navigation_font-size-large: 1rem;
+    --overlay-sub-navigation_line-height:1.67em;
+    --overlay-sub-navigation_letter-spacing:0.15em;
+    --overlay-sub-navigation_text-transform:uppercase;
+    --button_font-family:'LTC Caslon', serif;
+    --button_font-weight:400;
+    --button_font-style:normal;
+    --button_font-size-small: min(0.8125rem, 1rem + -0.21vh);
+    --button_font-size: min(0.8125rem, 1rem + -0.21vw);
+    --button_font-size-large: 0.8125rem;
+    --button_line-height:1.43em;
+    --button_letter-spacing:0.21em;
+    --button_text-transform:uppercase;
+    --form-label_font-family:'LTC Caslon', serif;
+    --form-label_font-weight:400;
+    --form-label_font-style:normal;
+    --form-label_font-size-small: min(0.75rem, 1rem + -0.28vh);
+    --form-label_font-size: min(0.75rem, 1rem + -0.28vw);
+    --form-label_font-size-large: 0.75rem;
+    --form-label_line-height:1.64em;
+    --form-label_letter-spacing:0.25em;
+    --form-label_text-transform:uppercase;
+    --pullquote_font-family:'LTC Caslon', serif;
+    --pullquote_font-weight:400;
+    --pullquote_font-style:italic;
+    --pullquote_font-size-small: min(2.25rem, 1rem + 1.39vh);
+    --pullquote_font-size: min(2.25rem, 1rem + 1.39vw);
+    --pullquote_font-size-large: 2.25rem;
+    --pullquote_line-height:1.17em;
+    --pullquote_letter-spacing:-0.02em;
+    --pullquote_text-transform:none;
+    --global-block-padding:40px;
+    --padding-scaling-xs:0.75;
+    --padding-scaling-sm:1.00;
+    --padding-scaling-md:1.00;
+    --padding-scaling-lg:1.00;
+    --max-page-width:1200px;
+    --button-width:30px;
+    --button-height:14px;}</style>
+<style id="js-ac-css-variables"></style>
+<style id="js-ac-css-definitions"></style>
+<meta name="p:domain_verify" content="6fd7d8f328934fec9478662a9a559d37" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-201827258-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-201827258-1');
+    </script>
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+                        fbq('init', '2263251963812115');
+            fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2263251963812115&ev=PageView&noscript=1"/></noscript>
+</head>
+    <body class="theme-theme3 legacy-palette photo--protected">
+        <div class="page-container accent_color-0 button_height-14 button_size-1 button_style-0 button_width-30 color_scheme-0 font_theme-0 menu_style-0">
+            <div class="theme-container" data-animation-type="none" data-animation-duration="1">
+                <div class="overlay-nav">
+                    <a class="overlay-nav__close-link" href="#"><i class="fal fa-times fa-fw"></i></a>
+                    <ul class="overlay-nav__nav-menu main-nav">
+                        <li class="nav-item">
+                        <span class="nav-link-container">
+                            <a href="/" class="mobile-menu-nav-primary nav-link">Home</a>
+                        </span></li>
+                        <li class="nav-item">
+                        <span class="nav-link-container">
+                            <a href="/sobre/" class="mobile-menu-nav-primary nav-link active">A Estilista</a>
+                        </span></li>
+                        <li class="nav-item">
+                        <span class="nav-link-container">
+                            <a href="/comofunciona/" class="mobile-menu-nav-primary nav-link">Sobre a consultoria</a>
+                        </span></li>
+                        <li class="nav-item">
+                        <span class="nav-link-container">
+                            <a href="/meutrabalho/" class="mobile-menu-nav-primary nav-link">Conheça meu trabalho</a>
+                        </span></li>
+                        <li class="nav-item">
+                        <span class="nav-link-container">
+                            <a href="/Contato/" class="mobile-menu-nav-primary nav-link">Contato</a>
+                        </span></li>
+                    </ul>
+                </div>
+                <div role="aside" class="theme-3-sidebar">
+                    <div role="header" class="theme-3-header">
+                        <div class="block-container block-theme3-header block-container--flushed-top block-container--flushed-bottom block-container--flushed-left block-container--flushed-right" id="block-container-PjqWdn">
+                            <div class="block-container__block">
+                                <div class="sidebar-logo-wrapper">
+                                    <div class="site-branding">
+                                        <a href="/" class="site-title logo-size--large"><img class="logo__img" src="./imagens/tamlogo2.jpg"></a>
+                                        <a class="site-nav-primary navbar-toggler show-nav-overlay d-block d-lg-none" href="#">Menu<i class="fal fa-bars fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="navigation" class="theme-3-nav">
+                        <div class="block-container block-theme3-nav block-container--flushed-top block-container--flushed-bottom block-container--flushed-left block-container--flushed-right" id="block-container-QPovAW">
+                            <div class="block-container__block">
+                                <div class="sidebar-nav-wrapper">
+                                    <ul class="theme_3_nav-content nav d-flex flex-column flex-nowrap main-nav site-nav">
+                                        <li class="nav-item">
+                                        <span class="nav-link-container">
+                                            <a href="/" class="site-nav-primary nav-link">Home</a>
+                                        </span></li>
+                                        <li class="nav-item">
+                                        <span class="nav-link-container">
+                                            <a href="/sobre/" class="site-nav-primary nav-link active">A Estilista</a>
+                                        </span></li>
+                                        <li class="nav-item">
+                                        <span class="nav-link-container">
+                                            <a href="/comofunciona/" class="site-nav-primary nav-link">Sobre a consultoria</a>
+                                        </span></li>
+                                        <li class="nav-item">
+                                        <span class="nav-link-container">
+                                            <a href="/meutrabalho/" class="site-nav-primary nav-link">Conheça meu trabalho</a>
+                                        </span></li>    
+                                        <li class="nav-item">
+                                        <span class="nav-link-container">
+                                            <a href="/Contato/" class="site-nav-primary nav-link">Contato</a>
+                                        </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="footer" class="theme-3-footer">
+                        <div class="block-container block-theme3-footer block-container--flushed-top block-container--flushed-bottom block-container--flushed-left block-container--flushed-right" id="block-container-y3MyLn">
+                            <div class="block-container__block">
+                                <div class="sidebar-footer-wrapper">
+                                    <div class="theme_3_footer-content d-flex flex-column">
+                                        <div class="theme_3-footer__social-links-wrapper d-flex flex-nowrap justify-content-center justify-content-lg-start">
+                                            <a class="social-links__link" href="https://www.facebook.com/" target="_blank">
+                                            <i class="social-links__icon social-links__facebook fab fa-facebook-f fa-fw"></i></a>
+                                            <a class="social-links__link" href="https://www.instagram.com/thamylemarinho/" target="_blank">
+                                            <i class="social-links__icon social-links__instagram fab fa-instagram fa-fw"></i></a>
+                                            <a class="social-links__link" href="https://br.pinterest.com/thamylem" target="_blank">
+                                            <i class="social-links__icon social-links__pinterest fab fa-pinterest fa-fw"></i></a>
+                                        </div>
+                                    <div class="theme_3-footer__business-name">
+                                        <span>All content Copyright © 2022 Thamyle Marinho</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="main" id="body-section-3131874" class="main-body theme-3-main">
+                <div class="block-container block-single-photo-with-text-horizontal page-block" id="block-container-3EGemv">
+                    <div class="block-container__block">
+                        <div class="container-fluid max-w-content mx-auto ml-lg-0 mr-lg-auto">
+                            <div class="single-photo-with-text__row row align-items-center">
+                                <div class="single-photo-with-text__text-container order-2 col-12 col-md-6">
+                                    <div class="element-container clearfix element-text" id="element-container-pdvVJe">
+                                        <div class="element-container__element">
+                                            <div class="text__text text--single-line">
+                                                <h2>Quem é Thamyle Marinho?</h2><p><br></p><p>Olá, prazer! Me chamo Thamyle Marinho, sou designer de moda, consultora de estilo e apaixonada por história, cultura e arte. Sempre vi a moda como uma incrível forma de expressão e, por isso, minha abordagem é completamente baseada na individualidade e não em regrinhas genéricas. Meu objetivo, através da consultoria, é conduzir mulheres para um vestir com identidade, no intuito de que ocupem espaços com mais segurança e autonomia.&nbsp;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-photo-with-text__photo-container order-1 col-12 col-md-6">
+                                    <div class="element-container clearfix element-fixed-size-photo" id="element-container-4R6x3e">
+                                        <div class="element-container__element">
+                                            <div class="photo__container">
+                                                <div class="row justify-content-center no-gutters">
+                                                    <div class="col-12">
+                                                        <img class="photo__photo" src="https://static.wixstatic.com/media/a80a6b_ff85657a277f45638bdd6787d4b6e548~mv2.jpg/v1/fill/w_562,h_811,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Thamyle-83.jpg" sizes="(max-width: 300px) 300px, (max-width: 500px) 500px, (max-width: 1000px) 1000px, (max-width: 1500px) 1000px, (max-width: 2500px) 1500px, 2500px">
+                                                        <div class="photo__tint absolute-fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-container block-testimonial page-block" id="block-container-60oeKb">
+                    <div class="block-container__block">
+                        <div class="element-container clearfix element-testimonial-wrapper" id="element-container-G4xLO4">
+                            <div class="element-container__element">
+                                <div class="testimonial-wrapper testimonial-wrapper--style_3">
+                                    <div class="testimonial-wrapper__container testimonial-wrapper__container--style_3 container-fluid max-w-content mx-auto ml-lg-0 mr-lg-auto">
+                                        <div class="row no-gutters">
+                                            <div class="col-12">
+                                                <h1 class="testimonial-wrapper__block-title text-center">Já visitou meu instagram?</h1>
+                                                <div class="testimonial-wrapper__row row no-gutters">
+                                                    <div class="testimonial-wrapper__column col-12 testimonial-wrapper__column-image--left">
+                                                        <div class="element-container clearfix element-testimonial" id="element-container-PL6Rro">
+                                                            <div class="element-container__element">
+                                                                <div class="testimonial">
+                                                                    <div class="testimonial__container--style_3">
+                                                                        <div class="row align-items-center pos-rel">
+                                                                            <div class="testimonial__photo-column col-12 col-md-6">
+                                                                                <div class="testimonial__photo" style="background-image: url( https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/305687208_1251015712321639_5573241627088927076_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=vAJZAWgo1CoAX9cueC4&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ABbrh9MEAAAA&oh=00_AT_zYhWHmIZVP0v5bt6MtI8hpfnrIt7Rk6_0XOWGGe4pbg&oe=632E778B ); background-position: 50% 50%;"></div>
+                                                                            </div>
+                                                                            <div class="testimonial__text-column col-12 col-md-6">
+                                                                                <div class="testimonial__content-wrapper">
+                                                                                    <p class="testimonial__quote">A minha relação com as cores mudou muito, no vestir, quando entendi que não basta saber quais tonalidades me atraem e expressam meu estilo. Mas, também, em quais proporções eu queria que cada cor aparecesse no meu visual. "</p>
+                                                                                    <p class="testimonial__source detail">@thamylemarinho</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="testimonial-wrapper__column col-12 testimonial-wrapper__column-image--right">
+                                                        <div class="element-container clearfix element-testimonial" id="element-container-y18Xer">
+                                                            <div class="element-container__element">
+                                                                <div class="testimonial">
+                                                                    <div class="testimonial__container--style_3">
+                                                                        <div class="row align-items-center pos-rel">
+                                                                            <div class="testimonial__photo-column col-12 col-md-6">
+                                                                                <div class="testimonial__photo" style="background-image: url(https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/306566982_124012970410926_5510784084060079734_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=CR2gm3o0yoEAX_h8be2&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ABbrh9MEAAAA&oh=00_AT_8Yj-5wnmbFGyO8iMfvqg70pcesQ5wCyZb8aKflNHIOw&oe=632E7B1A); background-position: 58% 32%;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="testimonial__text-column col-12 col-md-6">
+                                                                                <div class="testimonial__content-wrapper">
+                                                                                    <p class="testimonial__quote">“Por isso que eu sempre digo: uma peça não É SÓ uma peça. O que a consultoria de estilo faz é te trazer clareza sobre os essenciais DO SEU ESTILO e não de uma listinha de moda genérica. É um tipo de conhecimento que vai te ajudar a se vestir com mais confiança e a fazer escolhas mais assertivas. 
+
+                                                                                        Agora me conta, qual modelo de blazer mais fez sentido para você? 1,2,3 ou 4?”</p>
+                                                                                    <p class="testimonial__source detail">@thamylemarinho</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                        <div class="testimonial-wrapper__column col-12 testimonial-wrapper__column-image--left">
+                                                            <div class="element-container clearfix element-testimonial" id="element-container-QdM9r0">
+                                                                <div class="element-container__element">
+                                                                    <div class="testimonial">
+                                                                        <div class="testimonial__container--style_3">
+                                                                            <div class="row align-items-center pos-rel">
+                                                                                <div class="testimonial__photo-column col-12 col-md-6">
+                                                                                    <div class="testimonial__photo" style="background-image: url( https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/304559190_526439482305844_6942600866069970518_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=FtczM-HHUfAAX9lopCd&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ABbrh9MEAAAA&oh=00_AT8AfkSqbQhRGjSBjaPr89Zk--3Z82p6CSWUXWfoeWA7qw&oe=632D8071 ); background-position: 50% 50%;"></div>
+                                                                                    </div>
+                                                                                    <div class="testimonial__text-column col-12 col-md-6">
+                                                                                        <div class="testimonial__content-wrapper">
+                                                                                            <p class="testimonial__quote">"Toda vez que me deparo com uma lista de “peças tem que ter”, está lá o bendito blazer. O que vejo acontecer, bastante, é que muita gente compra – por achar que é peça essencial -  e, depois de um tempo, percebe que nunca conseguiu usar: seja por uma questão estilística ou de rotina. Sim, o blazer pode simplesmente não caber na vida que uma pessoa leva. "</p>
+                                                                                            <p class="testimonial__source detail">@thamylemarinho</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testimonial-wrapper__column col-12 testimonial-wrapper__column-image--right">
+                                                                <div class="element-container clearfix element-testimonial" id="element-container-3V8m83">
+                                                                    <div class="element-container__element">
+                                                                        <div class="testimonial">
+                                                                            <div class="testimonial__container--style_3">
+                                                                                <div class="row align-items-center pos-rel">
+                                                                                    <div class="testimonial__photo-column col-12 col-md-6">
+                                                                                        <div class="testimonial__photo" style="background-image: url( https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/305410283_585706613295005_3489467673037781599_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=LqZhMGR6lHEAX9gWkM-&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ABbrh9MEAAAA&oh=00_AT-aOy4w1sfdoSVKyMuROcRigccrnPdR5mxXyP0XFjluyg&oe=632D7F11 ); background-position: 53% 33%;"></div>
+                                                                                    </div>
+                                                                                        <div class="testimonial__text-column col-12 col-md-6">
+                                                                                            <div class="testimonial__content-wrapper">
+                                                                                                <p class="testimonial__quote">"A cartela de cores é só um acessório. O que você ganha vai muito além disso.
+
+                                                                                                    Dentre as vantagens, a maior delas é a segurança de fazer escolhas mais conscientes. 
+                                                                                                    
+                                                                                                    Para descobrir as suas cores comigo, é só clicar no link da BIO."</p>
+                                                                                                <p class="testimonial__source detail">@Thamylemarinho</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="block-container block-spacer page-block" id="block-container-Mjq6VD">
+                                <div class="block-container__block">
+                                    <div class="spacer spacer--size_sm"></div>
+                                    </div>
+                                </div>
+                                <div class="block-container block-instagram-graph page-block" id="block-container-7lo4J1">
+                                    <div class="block-container__block">
+                                        <div class="element-container clearfix element-instagram-graph" id="element-container-e8KeV0">
+                                            <div class="element-container__element">
+                                                <div class=" container-fluid max-w-content ml-lg-0 mr-lg-auto instagram-graph__container--style_2">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="instagram-graph__title-row row">
+                                                                <div class="col-12 text-center">
+                                                                    <i class="instagram-graph__icon fab fa-instagram"></i>
+                                                                    <h2 class="instagram-graph__title text-center">Me acompanhe e ao meu trabalho nas redes sociais</h2>
+                                                                    <hr class="instagram-graph__divider">
+                                                                    <a class="instagram-graph__handle detail" href="https://www.instagram.com/thamylemarinho" target="_blank">@thamylemarinho</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="instagram-graph__media-row row no-gutters">
+                                                                <div class="col-6 col-md-3">
+                                                                    <a href="https://www.instagram.com/thamylemarinho/" target="_blank">
+                                                                        <div class="instagram-graph__photo" data-src="https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/286024629_747341916406109_1136174200604868016_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=LnrSTNokGC8AX9Q9A87&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9yx5edb07DxV59fXplpvo778H0UQU1G3G70XydYT3ftA&amp;oe=62A6EE1B" data-height="1800" data-width="1440" style="background-image: url(https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/286024629_747341916406109_1136174200604868016_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=LnrSTNokGC8AX9Q9A87&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9yx5edb07DxV59fXplpvo778H0UQU1G3G70XydYT3ftA&amp;oe=62A6EE1B)">
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            <div class="col-6 col-md-3">
+                                                                <a href="https://www.instagram.com/thamylemarinho/" target="_blank">
+                                                                    <div class="instagram-graph__photo" data-src="https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/284887622_312277817623147_6768186593357446811_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=IiTk6lNTaCcAX8Kp4UK&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9_eE_8UOGDWk6zNgOj3vToVsNgyEqO6lPV5214RYM7fA&amp;oe=62A68F08" data-height="1080" data-width="1080" style="background-image: url(https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/284887622_312277817623147_6768186593357446811_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=IiTk6lNTaCcAX8Kp4UK&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9_eE_8UOGDWk6zNgOj3vToVsNgyEqO6lPV5214RYM7fA&amp;oe=62A68F08)">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        <div class="col-6 col-md-3">
+                                                            <a href="https://www.instagram.com/thamylemarinho/" target="_blank">
+                                                                <div class="instagram-graph__photo" data-src="https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/283667843_702221450883164_4527396843933066336_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=Dam-Vwy8FEoAX-4KQvO&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9B0Ztv90kb5sptzEWU71_ktNyQdyezYsgJLKlyTwgvrQ&amp;oe=62A696BD" data-height="1800" data-width="1440" style="background-image: url(https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/283667843_702221450883164_4527396843933066336_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=Dam-Vwy8FEoAX-4KQvO&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9B0Ztv90kb5sptzEWU71_ktNyQdyezYsgJLKlyTwgvrQ&amp;oe=62A696BD)">
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-3">
+                                                            <a href="https://www.instagram.com/thamylemarinho/" target="_blank">
+                                                                <div class="instagram-graph__photo" data-src="https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/281928908_424537502841169_8494805228689975422_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=DB3c_k42-VUAX8oRtMr&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9bGNrBO3ixaxtZv7Gr3vMcTXFPjHGqI7ldqEXoTPtzCw&amp;oe=62A6D88F" data-height="1800" data-width="1440" style="background-image: url(https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/281928908_424537502841169_8494805228689975422_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=DB3c_k42-VUAX8oRtMr&amp;_nc_ht=scontent-den4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9bGNrBO3ixaxtZv7Gr3vMcTXFPjHGqI7ldqEXoTPtzCw&amp;oe=62A6D88F)">
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var sentryConfig = {
+                dsn: 'https://dab2873be32f4034ad111643c52c98c0@sentry.io/1215049',
+                environment: 'production',
+                release: 'portfolio-website@release-1816',
+                };
+            </script>
+            <script>
+                var cookieBannerOptions = {
+                enable: false,
+                message: "We use cookies to analyze site usage and ensure a smooth browsing experience. By using this website, you agree to our use of cookies.",
+                linkText: "Learn more",
+                linkUrl: '',
+                ctaType: 0,
+                ctaMessage: "Accept",
+                };
+            </script>
+            <script src="https://static-pw.pixieset.com/assets/client/js/manifest.js?id=d91051ea7d0c9bd1981e"></script>
+            <script src="https://static-pw.pixieset.com/assets/client/js/vendor.js?id=098a7a3596114d4dc569"></script>
+            <script src="https://static-pw.pixieset.com/assets/client/js/index.js?id=4ebfdbafd7af3b40694b"></script>
+            <script src="https://static-pw.pixieset.com/assets/client/js/themes/theme_3.js?id=d9179c5cc4a560efa3f8"></script>
+            <script id="js-payload-pw" class="js-dom-cleanup" type="application/json">
+                {"s":{"t":{"tk":"theme_3"},"blks":{"theme_3_header":{"tk":"theme_3_header","uuid":"PjqWdn","logo":"0"},"theme_3_footer":{"tk":"theme_3_footer","uuid":"y3MyLn","footer_text":"All content Copyright \u00a9 {year} {businessName}","social_link_element":{"tk":"social_links","uuid":"JQd4Kj","style":{"val":"0","child_elements":[],"valueConfig":[{"facebook":"fab fa-facebook-f fa-fw","twitter":"fab fa-twitter fa-fw","instagram":"fab fa-instagram fa-fw","pinterest":"fab fa-pinterest fa-fw","youtube":"fab fa-youtube fa-fw","vimeo":"fab fa-vimeo-v fa-fw","linkedin":"fab fa-linkedin-in fa-fw"},{"facebook":"fab fa-facebook-square fa-fw","twitter":"fab fa-twitter-square fa-fw","instagram":"fab fa-instagram-square fa-fw","pinterest":"fab fa-pinterest-square fa-fw","youtube":"fab fa-youtube-square fa-fw","vimeo":"fab fa-vimeo-square fa-fw","linkedin":"fab fa-linkedin fa-fw"}]},"color":{"val":"2","child_elements":[],"valueConfig":["social-links--colour_brand","social-links--colour_neutral","social-links--colour_accent"]},"size":{"val":"2","child_elements":[],"valueConfig":["social-links--size_large","social-links--size_medium","social-links--size_small"]},"alignment":{"val":"1","child_elements":[],"valueConfig":["d-flex justify-content-start flex-wrap","d-flex justify-content-center flex-wrap","d-flex justify-content-end flex-wrap"]}},"show_social_links":"1"},"theme_3_post_footer":{"tk":"theme_3_post_footer","uuid":"0rGQok"},"theme_3_nav":{"tk":"theme_3_nav","uuid":"QPovAW"}}},"p":{"type":0,"blks":[{"tk":"single_photo_with_text_horizontal","uuid":"3EGemv","layout":"2","alignment":"1","text_element":{"tk":"text","uuid":"pdvVJe","content":{"val":"<h2>Quem \u00e9 Gabriela?<\/h2><p><br><\/p><p>Recifense de 31 anos, moro em Petrolina, no Vale do S\u00e3o Francisco. Sou jornalista de forma\u00e7\u00e3o, foi durante a carreira como rep\u00f3rter que comecei a me interessar por fotografia. Depois de seis anos atuando com assessoria de comunica\u00e7\u00e3o e fotografia institucional, decidi empreender e me dedicar \u00e0 fotografia corporativa de uma forma diferente. <\/p><p>Acho fant\u00e1stico como a fotografia potencializa a nossa percep\u00e7\u00e3o de valor sobre as pessoas e as marcas, mas sentia falta de retratos corporativos mais naturais, sem aquela est\u00e9tica cl\u00e1ssica de est\u00fadio, e queria um espa\u00e7o que me desafiasse, onde pudesse trabalhar com criatividade. Foi assim que nasceu meu est\u00fadio de luz natural, em 2020.<\/p><p>De l\u00e1 para c\u00e1, tive o prazer de fotografar empreendedoras de diversas \u00e1reas: m\u00e9dicas, psic\u00f3logas, advogadas, fot\u00f3grafas, al\u00e9m de pequenos neg\u00f3cios de gastronomia. Poder contribuir com a constru\u00e7\u00e3o de imagens estrat\u00e9gicas e cheias de personalidade, que valorizam o trabalho dessas pessoas, \u00e9 muito gratificante!&nbsp;<\/p>","child_elements":[]},"single_line":{"val":"1","child_elements":[]}},"fixed_size_photo_element":{"tk":"fixed_size_photo","uuid":"4R6x3e","photo_source":{"child_elements":[],"customData":{"photoswipablePhotos":[{"src":"\/\/images-pw.pixieset.com\/elementfield\/522656151\/BP3A1970-3e4425e0.jpg","w":1500,"h":2250}]}},"caption":{"val":"0","child_elements":[]},"caption_text":{"val":null,"child_elements":[]},"on_click":{"val":"0","child_elements":[]},"link_url":{"val":null,"child_elements":[]},"open_link_in_new_window":{"val":"0","child_elements":[]},"crop_ratio":{"val":"0","child_elements":[]}}},{"tk":"testimonial","uuid":"60oeKb","style":"2","testimonial_wrapper_element":{"tk":"testimonial_wrapper","uuid":"G4xLO4","child_elements":{"val":"{\"count\":3,\"defaultValues\":[{\"photo_source\":[{\"XS\":\"sample_photos\\\/sample-169_XS.jpg\",\"SM\":\"sample_photos\\\/sample-169_SM.jpg\",\"MD\":\"sample_photos\\\/sample-169_MD.jpg\",\"LG\":\"sample_photos\\\/sample-169_LG.jpg\",\"XL\":\"sample_photos\\\/sample-169_XL.jpg\",\"OR\":\"sample_photos\\\/sample-169_OR.jpg\"}],\"style\":\"1\",\"title\":\"Jessie & Ryan\",\"quote\":\"Lorem ipsum dolor sit amet, et amet wisi suspendisse eu vestibulum vel, malesuada magna in ultricies ipsum, class vel platea sem nulla et. Sed donec. Ultricies in etiam elit diam sem sollicitudin, varius in duis. Turpis nunc nulla leo curae elementum.\"},{\"photo_source\":[{\"XS\":\"sample_photos\\\/sample-165_XS.jpg\",\"SM\":\"sample_photos\\\/sample-165_SM.jpg\",\"MD\":\"sample_photos\\\/sample-165_MD.jpg\",\"LG\":\"sample_photos\\\/sample-165_LG.jpg\",\"XL\":\"sample_photos\\\/sample-165_XL.jpg\",\"OR\":\"sample_photos\\\/sample-165_OR.jpg\"}],\"style\":\"1\",\"title\":\"Emma & David\",\"quote\":\"Lorem ipsum dolor sit amet, et amet wisi suspendisse eu vestibulum vel, malesuada magna in ultricies ipsum, class vel platea sem nulla et. Sed donec. Ultricies in etiam elit diam sem sollicitudin, varius in duis. Turpis nunc nulla leo curae elementum.\"},{\"photo_source\":[{\"XS\":\"sample_photos\\\/sample-180_XS.jpg\",\"SM\":\"sample_photos\\\/sample-180_SM.jpg\",\"MD\":\"sample_photos\\\/sample-180_MD.jpg\",\"LG\":\"sample_photos\\\/sample-180_LG.jpg\",\"XL\":\"sample_photos\\\/sample-180_XL.jpg\",\"OR\":\"sample_photos\\\/sample-180_OR.jpg\"}],\"style\":\"1\",\"title\":\"Olivia & Jason\",\"quote\":\"Lorem ipsum dolor sit amet, et amet wisi suspendisse eu vestibulum vel, malesuada magna in ultricies ipsum, class vel platea sem nulla et. Sed donec. Ultricies in etiam elit diam sem sollicitudin, varius in duis. Turpis nunc nulla leo curae elementum.\"}]}","child_elements":[{"tk":"testimonial","uuid":"PL6Rro","photo_source":{"child_elements":[]},"style":{"val":"2","child_elements":[]},"title":{"val":"Mabianne Pimentel","child_elements":[]},"quote":{"val":"Obrigada pelo ensaio, Gabi! Fotografia impec\u00e1vel, amei muito!","child_elements":[]}},{"tk":"testimonial","uuid":"y18Xer","photo_source":{"child_elements":[]},"style":{"val":"2","child_elements":[]},"title":{"val":"Clarissa Braz","child_elements":[]},"quote":{"val":"Como \u00e9 bom quando nosso trabalho nos d\u00e1 a chance de ajudar as pessoas a verem suas melhores vers\u00f5es! Foi isso que recebi de voc\u00ea. Muito obrigada, Gabi!","child_elements":[]}},{"tk":"testimonial","uuid":"QdM9r0","photo_source":{"child_elements":[]},"style":{"val":"2","child_elements":[]},"title":{"val":"Fabiana Bezerra","child_elements":[]},"quote":{"val":"Atrav\u00e9s da fotografia, voc\u00ea ajuda a gente a lembrar de quem a gente \u00e9, a ter confian\u00e7a pra ser tudo que a gente pode ser. Obrigada, Gabi!","child_elements":[]}},{"tk":"testimonial","uuid":"3V8m83","photo_source":{"child_elements":[]},"style":{"val":"2","child_elements":[]},"title":{"val":"Luciene Seixas","child_elements":[]},"quote":{"val":"Seu trabalho \u00e9 um misto de compet\u00eancia e eleg\u00e2ncia! Apaixonada pelo resultado!","child_elements":[]}}],"customData":{"minNumberChildElements":1,"maxNumberChildElements":false}},"style":{"val":"2","child_elements":[],"valueConfig":[{"styleClass":"testimonial-wrapper--style_1","container":"testimonial-wrapper__container--style_1 testimonial-wrapper--hidden"},{"styleClass":"testimonial-wrapper--style_2","container":"testimonial-wrapper__container--style_2 testimonial-wrapper--hidden"},{"styleClass":"testimonial-wrapper--style_3","container":"testimonial-wrapper__container--style_3"}]},"title":{"val":"O que minhas clientes dizem?","child_elements":[]}}},{"tk":"spacer","uuid":"Mjq6VD","size":"2"},{"tk":"instagram_graph","uuid":"7lo4J1","style":"1","instagram_graph":{"tk":"instagram_graph","uuid":"e8KeV0","title":{"val":"Acompanhe os bastidores do meu trabalho nas redes sociais","child_elements":[]},"style":{"val":"1","child_elements":[],"valueConfig":[{"container":"container-fluid max-w-content ml-lg-0 mr-lg-auto instagram-graph__container--style_1"},{"container":"container-fluid max-w-content ml-lg-0 mr-lg-auto instagram-graph__container--style_2"},{"container":"container-fluid max-w-content ml-lg-0 mr-lg-auto instagram-graph__container--style_3"}]},"on_click":{"val":"1","child_elements":[]},"photoswipablePhotos":[{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/286024629_747341916406109_1136174200604868016_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=LnrSTNokGC8AX9Q9A87&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9yx5edb07DxV59fXplpvo778H0UQU1G3G70XydYT3ftA&oe=62A6EE1B","w":1440,"h":1800},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/284887622_312277817623147_6768186593357446811_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=IiTk6lNTaCcAX8Kp4UK&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9_eE_8UOGDWk6zNgOj3vToVsNgyEqO6lPV5214RYM7fA&oe=62A68F08","w":1080,"h":1080},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/283667843_702221450883164_4527396843933066336_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Dam-Vwy8FEoAX-4KQvO&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9B0Ztv90kb5sptzEWU71_ktNyQdyezYsgJLKlyTwgvrQ&oe=62A696BD","w":1440,"h":1800},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/281928908_424537502841169_8494805228689975422_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=DB3c_k42-VUAX8oRtMr&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9bGNrBO3ixaxtZv7Gr3vMcTXFPjHGqI7ldqEXoTPtzCw&oe=62A6D88F","w":1440,"h":1800},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/281583732_1221569665254284_2588161324713082860_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=23i2HvxQRT8AX9a6Jnf&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8uP5t8bV6yfXiMvCe9FGlrjc3K6bGCpu9goHpxgeNsWw&oe=62A640C3","w":1440,"h":1800},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/281011134_5157667674300618_8985918301475725460_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=IUgfqCJYPPYAX_Tl9tj&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8pf3_B2-MArs1rWXrcApZl9R4JM-czrAiXf_DVqJOl5g&oe=62A63826","w":1440,"h":960},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/281441871_548323483472773_6203121676319047294_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=TDfgrsmY4jsAX9tKHQq&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-3tIjD6vd5XPKQUvJjP4Y4ypwRkFqUDmLA8AcByBdyVA&oe=62A70E4A","w":1440,"h":1800},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/280727717_1850399738498943_1044271823579856992_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=pwiGI14lV5wAX_eVTp8&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9OzZuaEGmHymq4UR4nA4Gi-cz0mduEVUrl9KTsV5MFLg&oe=62A7F218","w":1440,"h":1800},{"src":"https:\/\/scontent-den4-1.cdninstagram.com\/v\/t51.29350-15\/280325203_702231010981699_3144362705666953575_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=1NCEv0e57-AAX_9uO40&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9STgV7lBWnJtbbINInaJ-4H0fJJN4OeStXb06LIfhyDA&oe=62A72CE2","w":1440,"h":1800}]}}],"blogCategories":[],"postTags":[],"navUrl":"\/sobre\/","previewUrl":"\/preview\/sobre\/"}}
+            </script>
+            <script class="js-dom-cleanup">
+                var payload = JSON.parse(document.getElementById('js-payload-pw').innerHTML);
+
+                    $(document)
+                        .on('contextmenu dragstart', '.photo--protected img', function (e) {
+                            e.preventDefault();
+                });
+
+                   PW.i(payload);
+            </script>
+    </body>
+</html>
